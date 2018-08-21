@@ -1,0 +1,213 @@
+body {
+    background-color: whitesmoke;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.blue { 
+    display: none;
+}
+
+nav {
+    height: 10vh;
+    background-color: rgb(42, 47, 49);
+    background-image: url("Layer 61.png");
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+nav img {
+    opacity: 0.6;
+}
+
+nav img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.avatar {
+    display: none;
+}
+
+
+
+.checked {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.checked label {
+    margin-right: 20px;
+}
+
+/* .file-1 {
+    background-image: url('file.png');
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    display: inline-block;
+} */
+
+main {
+    background-color: white;
+    height: 100%;
+    margin-top: 30px;
+    border: 1px solid lightgray;
+}
+
+.form {
+    display: flex;
+    padding: 20px;
+    justify-content: flex-start;
+    border-bottom: 1px solid lightgrey;
+}
+
+.file-1 img {
+
+    max-width: 50px;
+}
+
+.file-1 {
+    margin-right: 10px;
+}
+
+.file-content-1 {
+    margin-top: 5px;
+}
+
+.file-content-1 img {
+    width: 95%;
+}
+
+button {
+   width: 100%;
+   margin-top: 20px;
+   padding: 10px;
+   background-color: lightgrey;
+   font-size: 1rem;
+  }
+
+
+  
+  
+  input[type="text"] {
+      display: block;
+      margin-top: 20px;
+      width: -webkit-fill-available;
+      padding: 10px 35px;
+      background: url('Magnify Glass copy.png') no-repeat scroll 5px 5px;
+padding-left:40px;
+    background-color: white;
+  }
+
+
+@media (min-width: 725px) {
+
+    body {
+        margin: 0;
+    }
+ 
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 9fr;
+    }
+
+
+    nav {
+        display: block;
+        height: 100%;
+        margin-top: 0; 
+    }
+
+    .avatar {
+        display: block;
+    }
+
+    .blue {
+        display: block;
+        height: 5%;
+        background-color: rgb(60, 177, 230);
+    }
+
+   p {
+       margin-left: 20px;
+       font-size: 1.25rem;
+   }
+      
+   input[type="text"] {
+       margin: 20px;
+       font-size: 1.2rem;
+       background: url('Magnify Glass copy.png') no-repeat scroll 7px 7px;
+       background-color: white;
+       padding-left: 50px; 
+   }
+
+   .checked {
+    margin-left: 20px; 
+   }
+
+   input[type="checkbox"] {
+     margin-right: 15px;  
+   }
+
+   .file-1 img {
+       max-width: 100%;
+   }
+
+   .file-content-1 img{
+       width: 100%;
+       margin-left: 20px;
+   }
+ 
+   button {
+       width:  -webkit-fill-available;
+       margin: 20px;
+       opacity: 0.7;
+       
+   }
+
+   button:hover {
+    opacity: 1;
+    font-size: 1.25rem;
+    cursor: pointer;
+   }
+
+   nav > div:not(.blue) {
+       text-align: center;
+       padding: 20px;
+       border-bottom: 2px solid black;
+   }
+
+   nav > div img:not(.avatar) {
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(51, 45, 35);
+    border-radius: 50%;
+    padding: 12px;
+    background-color: lightslategray;
+   }
+
+   .ladder {
+       padding: 13px 15px !important;
+   }
+
+   nav> div:hover:not(.blue) {
+       background-color: white;
+   }
+
+   nav > div:hover img:not(.avatar) {
+       background-color: rgb(60, 177, 230);
+       border: none;
+   }
+}
+
+  
+
+
+  
+
+
